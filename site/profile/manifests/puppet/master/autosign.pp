@@ -1,6 +1,6 @@
 class profile::puppet::master::autosign (
   Variant[String,Array] $password_list,
-  String                $loglevel       = 'INFO',
+  String                $loglevel       = 'info',
 ) {
   class { '::autosign':
     ensure => 'latest',
