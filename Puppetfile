@@ -24,3 +24,5 @@ mod 'puppetlabs-pe_metrics_dashboard',
 mod 'danieldreier-autosign', '0.2.0'
 mod 'puppetlabs-inifile', '2.3.0'
 
+mod 'WhatsARanjit-node_manager', '0.7.1'
+
