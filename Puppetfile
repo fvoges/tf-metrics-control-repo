@@ -21,3 +21,6 @@ mod 'puppetlabs-pe_metrics_dashboard',
   :git => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
   :ref => 'master'
 
+mod 'danieldreier-autosign', '0.2.0'
+mod 'puppetlabs-inifile', '2.3.0'
+
