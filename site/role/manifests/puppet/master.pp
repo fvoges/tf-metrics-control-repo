@@ -1,5 +1,5 @@
 class role::puppet::master {
 
-  include ::profile::puppet::autosign
+  include ::profile::puppet::master::autosign
 
 }
