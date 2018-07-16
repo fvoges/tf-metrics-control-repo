@@ -15,3 +15,9 @@ forge 'https://forge.puppet.com'
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+mod 'puppetlabs-puppet_metrics_collector', '5.0.1'
+mod 'puppetlabs-stdlib', '4.25.1'
+mod 'puppetlabs-pe_metrics_dashboard',
+  :git => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
+  :ref => 'master'
+
