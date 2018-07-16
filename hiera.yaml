@@ -3,10 +3,15 @@ version: 5
 
 defaults:
   datadir: "data"
+  options:
+    data_hash: yaml_data
 
 hierarchy:
-  - name: 'Yaml backend'
-    data_hash: yaml_data
-    paths:
-      - "nodes/%{trusted.certname}.yaml"
-      - 'common.yaml'
+  - name: 'Node specific data source'
+    path: "nodes/%{trusted.certname}.yaml"
+
+  - name: 'Terraform data source'
+    path: '/opt/terraform/data/common.yaml'
+
+  - name: 'Common data source'
+    path: 'common.yaml'
