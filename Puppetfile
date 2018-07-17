@@ -28,3 +28,5 @@ mod 'WhatsARanjit-node_manager', '0.7.1'
 
 mod 'petems-swap_file', '4.0.0'
 
+mod 'puppetlabs-exec', '0.2.0'
+
