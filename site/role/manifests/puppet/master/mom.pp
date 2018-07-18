@@ -1,4 +1,4 @@
-class role::puppet::master {
+class role::puppet::master::mom {
 
   include ::profile::puppet::master::autosign
 
