@@ -17,9 +17,12 @@ forge 'https://forge.puppet.com'
 #  :branch => 'docs_experiment'
 mod 'puppetlabs-puppet_metrics_collector', '5.0.1'
 mod 'puppetlabs-stdlib', '4.25.1'
-mod 'puppetlabs-pe_metrics_dashboard',
-  :git => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
-  :ref => 'master'
+# mod 'puppetlabs-pe_metrics_dashboard',
+#   :git => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
+#   :ref => 'master'
+mod 'puppetlabs-puppet_metrics_dashboard', '1.0.1'
+mod 'puppet-archive', '3.1.0'
+mod 'puppet-grafana', '4.5.0'
 
 mod 'danieldreier-autosign', '0.2.0'
 mod 'puppetlabs-inifile', '2.3.0'
