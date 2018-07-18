@@ -21,6 +21,7 @@ mod 'puppetlabs-stdlib', '4.25.1'
 #   :git => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
 #   :ref => 'master'
 mod 'puppetlabs-puppet_metrics_dashboard', '1.0.1'
+mod 'puppetlabs-apt', '4.5.1'
 mod 'puppet-archive', '3.1.0'
 mod 'puppet-grafana', '4.5.0'
 
