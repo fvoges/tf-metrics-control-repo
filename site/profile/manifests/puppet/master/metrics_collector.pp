@@ -6,7 +6,9 @@ class profile::puppet::master::metrics_collector {
     trusted.extensions.pp_role = "puppet::cm"
   }'
 
+  $nodes = puppetdb_query($nodes_query).map |$value| { $value["certname"] }
+
   class { '::puppet_metrics_collector':
-    puppetserver_hosts => puppetdb_query($nodes_query),
+    puppetserver_hosts => $nodes,
   }
 }
