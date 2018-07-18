@@ -7,6 +7,6 @@ class profile::puppet::master::metrics_collector {
   }'
 
   class { '::puppet_metrics_collector':
-    puppetserver_hosts => puppetdb_query($nodes),
+    puppetserver_hosts => puppetdb_query($nodes_query),
   }
 }
