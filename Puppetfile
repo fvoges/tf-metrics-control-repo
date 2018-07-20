@@ -34,3 +34,4 @@ mod 'petems-swap_file', '4.0.0'
 
 mod 'puppetlabs-exec', '0.2.0'
 
+mod 'puppetlabs-puppet_agent', '1.6.1'
