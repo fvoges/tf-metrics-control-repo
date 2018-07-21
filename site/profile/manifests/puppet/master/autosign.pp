@@ -1,6 +1,6 @@
 class profile::puppet::master::autosign (
-  Variant[String,Array] $password_list,
-  String                $loglevel       = 'info',
+  String $shared_secret,
+  String $loglevel       = 'info',
 ) {
   class { '::autosign':
     ensure => 'latest',
@@ -8,7 +8,9 @@ class profile::puppet::master::autosign (
       'general'       => {
         'loglevel' => $loglevel,
       },
-      'password_list' => $password_list,
+      'password_list' => {
+        'password' => $shared_secret,
+      }
     },
     before => Ini_setting['policy-based autosigning'],
   }
