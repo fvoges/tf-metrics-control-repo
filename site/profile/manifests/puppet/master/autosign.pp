@@ -15,10 +15,9 @@ class profile::puppet::master::autosign (
 
   ini_setting { 'policy-based autosigning':
     setting => 'autosign',
-    path    => "${::confdir}/puppet.conf",
+    path    => $::settings::config,
     section => 'master',
     value   => '/opt/puppetlabs/puppet/bin/autosign-validator',
-    notify  => Service['pe-puppetserver'],
   }
 
 }
