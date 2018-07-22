@@ -1,5 +1,5 @@
 class profile::puppet::master::metrics_dashboard (
-  String $grafana_password,
+  String $grafana_password = 'admin',
 ) {
   $nodes_query = 'inventory[certname] {
     trusted.extensions.pp_role = "puppet::master"
