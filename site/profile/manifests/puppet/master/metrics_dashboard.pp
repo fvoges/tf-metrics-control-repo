@@ -17,5 +17,7 @@ class profile::puppet::master::metrics_dashboard (
     add_dashboard_examples => true,
     overwrite_dashboards   => false,
     master_list            => $nodes,
+    influxdb_database_name => ['puppet_metrics','telegraf','graphite'],
+    consume_graphite       => true,
   }
 }
